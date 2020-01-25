@@ -31,12 +31,12 @@ products = [
 #
  
 products_count = len(products)
-print ("--------------")
+print ("-------------------------------------")
 print ("THERE ARE " + str(products_count) + " PRODUCTS:")
 # print("THERE ARE", len(products), "PRODUCTS")
 #print("THERE ARE " + str(len(products)) + " PRODUCTS:")
 #print(f"THERE ARE {len(products)} PRODUCTS:")
-print ("--------------")
+print ("-------------------------------------")
 
 def sort_by_name(any_product):
     return any_product["name"]
@@ -61,12 +61,13 @@ for product in products:
         departments.append(product["department"])
 
 deparment_count = len(departments) 
-print ("--------------")
+print ("-------------------------------------")
 print ("THERE ARE " + str(deparment_count) + " DEPARTMENTS:")
-print ("--------------")
+print ("-------------------------------------")
 
+departments.sort()
 for department in departments: 
-    print(department)
+    print(department.title())
 
 #--------------
 #THERE ARE 20 PRODUCTS:
