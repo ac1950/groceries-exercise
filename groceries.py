@@ -35,8 +35,19 @@ print ("THERE ARE " + str(products_count) + " PRODUCTS:")
 #print(f"THERE ARE {len(products)} PRODUCTS:")
 print ("--------------")
 
+ #{"id":1, 
+ #"name": "Chocolate Sandwich Cookies", 
+ #"department": "snacks", 
+ #"aisle": "cookies cakes", 
+ #"price": 3.50},
+ 
+ 
 for product in products:
-    print(product["name"])
+   price_usd = "(${0:.2f})".format(product["price"])
+   print( "+ " + product["name"] + " " + price_usd    )
+    
+
+
 
 #--------------
 #THERE ARE 20 PRODUCTS:
@@ -74,4 +85,5 @@ for product in products:
 # + Pantry (2 products)
 # + Personal Care (2 products)
 # + Snacks (2 products)
+
 
