@@ -67,7 +67,12 @@ print ("-------------------------------------")
 
 departments.sort()
 for department in departments: 
-    print(department.title())
+    matching_products = [p for p in products if p["department"] == department]
+    matching_products_count = len(matching_products)
+    print(department.title() + " (" + str(matching_products_count) + " products)"  )
+
+
+
 
 #--------------
 #THERE ARE 20 PRODUCTS:
